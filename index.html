@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/550d85bdfc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm Vinsent <span>Farrel</span> Eka Setyawan<br>From Universitas Surabaya</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>5th semester student of the Faculty of Information Engineering majoring in Information Management and Business Systems, 
+                        University of Surabaya, who has experience in implementing several projects related to the creation of applications and Web sites.
+                        I also have campus committee experience.
+                        I am interested in UI/UX, Front End Developer, Website Developer, App Developer, Android Developer.
+                       </p>
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Front-End Developer</span><br>Web App Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Oktober 2023 - Desember 2023</span><br>Contribute as frontend and backend developer working on "Cerbung" application</li>
+                                <li><span>Februari 2023 - Mei 2023</span><br>Comittee Industrial Creative Competition - Universitas Surabaya</li>
+                                <li><span>Oktober 2022 - Januari 2023</span><br>lead UI/UX 'WalkIt' application project</li>
+                                <li><span>September 2022 - Januari 2023</span><br>Contribute as frontend developers working on store system aplication</li>
+                                <li><span>November 2023</span><br>Participant UI/UX Workshop Google Developer Student Club Institut Teknologi Sepuluh Nopember </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Universitas Surabaya</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------service---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>I focus on delivering elegant and user-friendly apps and websites design.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Front-End Developer</h2>
+                <p>I have the ability to create user-friendly websites and applications with a focus on user experience.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------portfolio--------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/WalkIt.jpg">
+                <div class="layer">
+                    <h3>WalkIt</h3>
+                    <p>This application helps users and street vendors order and sell food.
+                        Some outstanding features of this application are that users can see the location of street vendors through a map, 
+                        users can choose to have food delivered or pick up food themselves.
+                        There is also a payment function
+                    </p>
+                    <a href="https://www.figma.com/file/Wlh14hiiMl9Rt68xzlv7Du/Walk-It?type=design&mode=design&t=G9Xk3WLUnYwpQOZd-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/HelloCat.jpg">
+                <div class="layer">
+                    <h3>Hello Cat</h3>
+                    <p>This application helps cat lovers share pictures of their cats through social networks specifically for cats.
+                        Some of the features provided are social media features for users and cat.</p>
+                    <a href="https://www.figma.com/file/k0er1C2rzLDq4R5zf5AZnb/GDSC-UIUX-Final-Project-Vinsent-Farrel-Eka-Setyawan?type=design&node-id=0%3A1&mode=design&t=oO3gBrS5b7mJnQTD-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/School Website.jpg">
+                <div class="layer">
+                    This website is an example of a website that displays school profiles.</p>
+                    <a href="https://www.figma.com/file/zFbFComomNZxaK4AhCrPKO/GDSC-UIUX-Task-1-Vinsent-Farrel-Eka-Setyawan?type=design&node-id=0%3A1&mode=design&t=NIoF47VG6oUChaBK-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- --------------contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> vinsentfarrel469@gmail.com</p>
+                <p><i class="fa-solid fa-phone-square-alt"></i> 081233462823</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61550966881352&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/vnsnt_frrl?igsh=MTZ4aDFlYmdmdWVjNA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vinsent-farrel-eka-setyawan-359963206/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV Vinsent Farrel Eka Setyawan.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Vinsent Farrel. Portfolio <i class="fa-solid fa-book"></i> </p>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right =  "0";
+        }
+        function closemenu(){
+            sidemenu.style.right =  "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx4LLeT9GdpslVLcm2d2V0BIXWGExwKeb8B744vaW0BScNBFkgtfJVPjDryFxLtdxRO/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
